@@ -1,0 +1,14 @@
+{
+  "minimum_f1_by_suite": {
+    "probe_response": 0.9,
+    "retrieval_integrity": 0.9
+  },
+  "severity_weighting": {
+    "critical": 1.5,
+    "high": 1.25,
+    "medium": 1.0,
+    "low": 0.8
+  },
+  "max_false_positive_rate": 0.08,
+  "max_false_negative_rate": 0.08
+}

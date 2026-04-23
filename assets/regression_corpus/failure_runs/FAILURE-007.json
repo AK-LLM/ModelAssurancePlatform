@@ -1,0 +1,10 @@
+{
+  "campaign_id": "FAILURE-007",
+  "decision": "BLOCK",
+  "findings_total": 15,
+  "critical_findings": 3,
+  "high_findings": 1,
+  "average_risk_score": 3.06,
+  "open_findings": 12,
+  "captured_at": "2026-04-08T12:00:00Z"
+}

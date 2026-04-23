@@ -1,0 +1,8 @@
+pipeline {
+  agent any
+  stages {
+    stage('Install') { steps { sh 'pip install -r requirements.txt' } }
+    stage('MAP Assurance') { steps { sh 'python cli.py --mode standalone --domain government --families government_assurance attack_surface tool_use --output ci_output' } }
+    stage('Tests') { steps { sh 'python -m unittest discover -s tests' } }
+  }
+}

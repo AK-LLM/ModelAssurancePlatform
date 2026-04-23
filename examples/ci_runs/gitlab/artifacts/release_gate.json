@@ -1,0 +1,8 @@
+{
+  "pipeline": "gitlab",
+  "gate": "pass",
+  "conditions": [
+    "close critical findings",
+    "rerun verification family"
+  ]
+}

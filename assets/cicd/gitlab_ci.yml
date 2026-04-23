@@ -1,0 +1,12 @@
+stages: [assurance]
+map_assurance:
+  stage: assurance
+  image: python:3.11
+  script:
+    - pip install -r requirements.txt
+    - python cli.py --mode standalone --domain finance --families finance_assurance tool_use rag_security --output ci_output
+    - python -m unittest discover -s tests
+  artifacts:
+    when: always
+    paths:
+      - ci_output/

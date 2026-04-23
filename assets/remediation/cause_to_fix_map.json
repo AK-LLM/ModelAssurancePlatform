@@ -1,0 +1,258 @@
+{
+  "instruction hierarchy enforcement gap": [
+    "PRO-001",
+    "POL-002",
+    "MOD-003",
+    "RET-004",
+    "TOO-005",
+    "DEP-006"
+  ],
+  "retrieval content isolation weakness": [
+    "PRO-011",
+    "POL-012",
+    "MOD-013",
+    "RET-014",
+    "TOO-015",
+    "DEP-016"
+  ],
+  "tool allowlist gap": [
+    "PRO-021",
+    "POL-022",
+    "MOD-023",
+    "RET-024",
+    "TOO-025",
+    "DEP-026"
+  ],
+  "unsafe parameter validation": [
+    "PRO-031",
+    "POL-032",
+    "MOD-033",
+    "RET-034",
+    "TOO-035",
+    "DEP-036"
+  ],
+  "secret redaction gap": [
+    "PRO-041",
+    "POL-042",
+    "MOD-043",
+    "RET-044",
+    "TOO-045",
+    "DEP-046"
+  ],
+  "credential boundary weakness": [
+    "PRO-051",
+    "POL-052",
+    "MOD-053",
+    "RET-054",
+    "TOO-055",
+    "DEP-056"
+  ],
+  "data minimization weakness": [
+    "PRO-061",
+    "POL-062",
+    "MOD-063",
+    "RET-064",
+    "TOO-065",
+    "DEP-066"
+  ],
+  "cross-session isolation gap": [
+    "PRO-071",
+    "POL-072",
+    "MOD-073",
+    "RET-074",
+    "TOO-075",
+    "DEP-076"
+  ],
+  "regulated-data handling weakness": [
+    "PRO-081",
+    "POL-082",
+    "MOD-083",
+    "RET-084",
+    "TOO-085",
+    "DEP-086"
+  ],
+  "clinical privacy enforcement gap": [
+    "PRO-091",
+    "POL-092",
+    "MOD-093",
+    "RET-094",
+    "TOO-095",
+    "DEP-096"
+  ],
+  "memory isolation failure": [
+    "PRO-101",
+    "POL-102",
+    "MOD-103",
+    "RET-104",
+    "TOO-105",
+    "DEP-106"
+  ],
+  "session-boundary persistence leak": [
+    "PRO-111",
+    "POL-112",
+    "MOD-113",
+    "RET-114",
+    "TOO-115",
+    "DEP-116"
+  ],
+  "filesystem scope validation gap": [
+    "PRO-121",
+    "POL-122",
+    "MOD-123",
+    "RET-124",
+    "TOO-125",
+    "DEP-126"
+  ],
+  "unsafe path normalization": [
+    "PRO-131",
+    "POL-132",
+    "MOD-133",
+    "RET-134",
+    "TOO-135",
+    "DEP-136"
+  ],
+  "harmful-code refusal weakness": [
+    "PRO-141",
+    "POL-142",
+    "MOD-143",
+    "RET-144",
+    "TOO-145",
+    "DEP-146"
+  ],
+  "unsafe capability boundary": [
+    "PRO-151",
+    "POL-152",
+    "MOD-153",
+    "RET-154",
+    "TOO-155",
+    "DEP-156"
+  ],
+  "renderer isolation weakness": [
+    "PRO-161",
+    "POL-162",
+    "MOD-163",
+    "RET-164",
+    "TOO-165",
+    "DEP-166"
+  ],
+  "privacy egress control gap": [
+    "PRO-171",
+    "POL-172",
+    "MOD-173",
+    "RET-174",
+    "TOO-175",
+    "DEP-176"
+  ],
+  "adapter safety retention gap": [
+    "PRO-181",
+    "POL-182",
+    "MOD-183",
+    "RET-184",
+    "TOO-185",
+    "DEP-186"
+  ],
+  "execution-time control weakness": [
+    "PRO-191",
+    "POL-192",
+    "MOD-193",
+    "RET-194",
+    "TOO-195",
+    "DEP-196"
+  ],
+  "output sanitization weakness": [
+    "PRO-201",
+    "POL-202",
+    "MOD-203",
+    "RET-204",
+    "TOO-205",
+    "DEP-206"
+  ],
+  "tool approval workflow gap": [
+    "PRO-211",
+    "POL-212",
+    "MOD-213",
+    "RET-214",
+    "TOO-215",
+    "DEP-216"
+  ],
+  "supply-chain trust weakness": [
+    "PRO-221",
+    "POL-222",
+    "MOD-223",
+    "RET-224",
+    "TOO-225",
+    "DEP-226"
+  ],
+  "multilingual consistency weakness": [
+    "PRO-231",
+    "POL-232",
+    "MOD-233",
+    "RET-234",
+    "TOO-235",
+    "DEP-236"
+  ],
+  "domain policy calibration gap": [
+    "PRO-241",
+    "POL-242",
+    "MOD-243",
+    "RET-244",
+    "TOO-245",
+    "DEP-246"
+  ],
+  "regression coverage weakness": [
+    "PRO-251",
+    "POL-252",
+    "MOD-253",
+    "RET-254",
+    "TOO-255",
+    "DEP-256"
+  ],
+  "drift monitoring weakness": [
+    "PRO-261",
+    "POL-262",
+    "MOD-263",
+    "RET-264",
+    "TOO-265",
+    "DEP-266"
+  ],
+  "citation integrity weakness": [
+    "PRO-271",
+    "POL-272",
+    "MOD-273",
+    "RET-274",
+    "TOO-275",
+    "DEP-276"
+  ],
+  "evidence provenance weakness": [
+    "PRO-281",
+    "POL-282",
+    "MOD-283",
+    "RET-284",
+    "TOO-285",
+    "DEP-286"
+  ],
+  "exception workflow weakness": [
+    "PRO-291",
+    "POL-292",
+    "MOD-293",
+    "RET-294",
+    "TOO-295",
+    "DEP-296"
+  ],
+  "rate limiting weakness": [
+    "PRO-301",
+    "POL-302",
+    "MOD-303",
+    "RET-304",
+    "TOO-305",
+    "DEP-306"
+  ],
+  "export control weakness": [
+    "PRO-311",
+    "POL-312",
+    "MOD-313",
+    "RET-314",
+    "TOO-315",
+    "DEP-316"
+  ]
+}

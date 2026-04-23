@@ -1,0 +1,21 @@
+name: map-assurance
+on: [push, pull_request]
+jobs:
+  assurance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: python cli.py --mode standalone --domain healthcare --families attack_surface adversarial_robustness healthcare_assurance rag_security --output ci_output
+      - run: python -m unittest discover -s tests
+      - name: Block on MAP release gate
+        run: python - <<'PY'
+import json, pathlib, sys
+latest = sorted(pathlib.Path('ci_output').glob('MAPV12-*.json'))[-1]
+decision = json.loads(latest.read_text())['governance']['decision']
+print('MAP decision:', decision)
+sys.exit(0 if decision in {'APPROVE','APPROVE WITH CONTROLS'} else 1)
+PY

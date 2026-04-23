@@ -1,0 +1,8 @@
+{
+  "pipeline": "github",
+  "gate": "pass",
+  "conditions": [
+    "close critical findings",
+    "rerun verification family"
+  ]
+}

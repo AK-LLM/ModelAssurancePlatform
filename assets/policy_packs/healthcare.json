@@ -1,0 +1,9 @@
+{
+  "release_threshold": 4.2,
+  "critical_block": 1,
+  "required_controls": [
+    "phi_protection",
+    "ehr_writeback_block",
+    "clinical_hallucination_check"
+  ]
+}

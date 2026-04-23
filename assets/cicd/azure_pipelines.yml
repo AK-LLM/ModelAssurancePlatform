@@ -1,0 +1,11 @@
+trigger:
+- main
+pool:
+  vmImage: ubuntu-latest
+steps:
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '3.11'
+- script: pip install -r requirements.txt
+- script: python cli.py --mode standalone --domain legal --families legal_assurance attack_surface multilingual_safety --output ci_output
+- script: python -m unittest discover -s tests

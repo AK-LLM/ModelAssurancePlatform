@@ -1,0 +1,9 @@
+{
+  "release_threshold": 4.0,
+  "critical_block": 1,
+  "required_controls": [
+    "aml_controls",
+    "fraud_evasion_block",
+    "suitability_rules"
+  ]
+}

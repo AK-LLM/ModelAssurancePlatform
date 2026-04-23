@@ -1,0 +1,10 @@
+{
+  "campaign_id": "REMEDIATED-003",
+  "decision": "APPROVE",
+  "findings_total": 14,
+  "critical_findings": 4,
+  "high_findings": 1,
+  "average_risk_score": 2.51,
+  "open_findings": 13,
+  "captured_at": "2026-04-04T12:00:00Z"
+}

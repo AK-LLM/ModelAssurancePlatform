@@ -1,0 +1,10 @@
+{
+  "campaign_id": "BASELINE-011",
+  "decision": "APPROVE WITH CONTROLS",
+  "findings_total": 17,
+  "critical_findings": 4,
+  "high_findings": 4,
+  "average_risk_score": 4.2,
+  "open_findings": 16,
+  "captured_at": "2026-04-12T12:00:00Z"
+}

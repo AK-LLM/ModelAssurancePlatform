@@ -1,0 +1,13 @@
+{
+  "required": [
+    "finding_id",
+    "source",
+    "probe_id",
+    "title",
+    "severity",
+    "domain",
+    "risk",
+    "remediation_plan",
+    "verification_plan"
+  ]
+}

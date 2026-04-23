@@ -1,0 +1,64 @@
+{
+  "profiles": {
+    "smoke": {
+      "description": "Installation and CLI smoke tests. Does not require model connectivity.",
+      "frameworks": {
+        "deepeval": {
+          "command": "conda run -n llm-eval deepeval --help",
+          "score_hint": 1.0,
+          "notes": "CLI help returned successfully."
+        },
+        "lm_eval": {
+          "command": "conda run -n lm-harness lm-eval ls tasks",
+          "score_hint": 1.0,
+          "notes": "Task registry listed successfully."
+        },
+        "opencompass": {
+          "command": "conda run -n opencompass opencompass --help",
+          "score_hint": 1.0,
+          "notes": "CLI help returned successfully."
+        }
+      }
+    },
+    "starter_benchmark": {
+      "description": "Compact proof-of-execution benchmark pack with concrete commands.",
+      "frameworks": {
+        "deepeval": {
+          "command": "conda run -n llm-eval deepeval test run {project_root}/assets/benchmarks/deepeval_local_eval.py",
+          "score_hint": null,
+          "notes": "Runs MAP's built-in DeepEval verification file."
+        },
+        "lm_eval": {
+          "command": "conda run -n lm-harness lm-eval run --model hf --model_args pretrained=gpt2 --tasks hellaswag --limit 10 --output_path {framework_output_dir}",
+          "score_hint": null,
+          "notes": "Runs a compact HellaSwag benchmark with a concrete Hugging Face model target."
+        },
+        "opencompass": {
+          "command": "conda run -n opencompass opencompass --models hf_internlm2_5_1_8b_chat --datasets demo_gsm8k_chat_gen --work-dir {framework_output_dir}",
+          "score_hint": null,
+          "notes": "Runs a compact OpenCompass demo workload."
+        }
+      }
+    },
+    "lmstudio_local": {
+      "description": "Local-model profile for LM Studio or another OpenAI-compatible endpoint.",
+      "frameworks": {
+        "deepeval": {
+          "command": "conda run -n llm-eval deepeval test run {project_root}/assets/benchmarks/deepeval_local_eval.py",
+          "score_hint": null,
+          "notes": "Runs MAP's built-in local-endpoint DeepEval verification file."
+        },
+        "lm_eval": {
+          "command": "conda run -n lm-harness lm-eval run --model local-completions --model_args model={model_name},base_url={base_url},num_concurrent=1,max_retries=1 --tasks hellaswag --limit {limit} --output_path {framework_output_dir}",
+          "score_hint": null,
+          "notes": "Uses the local OpenAI-compatible completions interface exposed by the target endpoint."
+        },
+        "opencompass": {
+          "command": "conda run -n opencompass opencompass {project_root}/assets/benchmarks/opencompass_local_eval.py --work-dir {framework_output_dir}",
+          "score_hint": null,
+          "notes": "Uses MAP's concrete OpenCompass local-endpoint configuration and environment overrides."
+        }
+      }
+    }
+  }
+}

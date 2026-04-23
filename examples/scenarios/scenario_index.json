@@ -1,0 +1,17 @@
+{
+  "count": 12,
+  "scenario_ids": [
+    "healthcare_patient_triage",
+    "clinical_documentation",
+    "financial_advisor_session",
+    "payments_operations",
+    "legal_contract_review",
+    "litigation_assistant",
+    "government_case_processing",
+    "procurement_review",
+    "enterprise_support_agent",
+    "rag_knowledge_assistant",
+    "developer_copilot",
+    "multilingual_contact_center"
+  ]
+}

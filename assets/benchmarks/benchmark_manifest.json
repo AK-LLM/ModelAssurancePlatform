@@ -1,0 +1,70 @@
+{
+  "frameworks": [
+    {
+      "framework_id": "deepeval",
+      "display_name": "DeepEval",
+      "command": "deepeval",
+      "category": "application",
+      "threshold": 0.75,
+      "focus_areas": [
+        "rag",
+        "answer relevancy",
+        "faithfulness",
+        "tool correctness"
+      ],
+      "typical_outputs": [
+        "test run traces",
+        "metric scores",
+        "JSON summaries"
+      ],
+      "command_templates": [
+        "conda run -n llm-eval deepeval --help",
+        "conda run -n llm-eval deepeval test run {project_root}/assets/benchmarks/deepeval_local_eval.py"
+      ]
+    },
+    {
+      "framework_id": "lm_eval",
+      "display_name": "lm-evaluation-harness",
+      "command": "lm-eval",
+      "category": "benchmark",
+      "threshold": 0.7,
+      "focus_areas": [
+        "standardized tasks",
+        "reasoning",
+        "knowledge",
+        "regression"
+      ],
+      "typical_outputs": [
+        "task scores",
+        "task listings",
+        "JSON result packs"
+      ],
+      "command_templates": [
+        "conda run -n lm-harness lm-eval ls tasks",
+        "conda run -n lm-harness lm-eval run --model hf --model_args pretrained=gpt2 --tasks hellaswag --limit 10 --output_path {framework_output_dir}"
+      ]
+    },
+    {
+      "framework_id": "opencompass",
+      "display_name": "OpenCompass",
+      "command": "opencompass",
+      "category": "benchmark",
+      "threshold": 0.7,
+      "focus_areas": [
+        "dataset orchestration",
+        "benchmark suites",
+        "reasoning",
+        "chat evaluation"
+      ],
+      "typical_outputs": [
+        "leaderboard-style summaries",
+        "dataset run logs",
+        "evaluation reports"
+      ],
+      "command_templates": [
+        "conda run -n opencompass opencompass --help",
+        "conda run -n opencompass opencompass {project_root}/assets/benchmarks/opencompass_local_eval.py --work-dir {framework_output_dir}"
+      ]
+    }
+  ]
+}

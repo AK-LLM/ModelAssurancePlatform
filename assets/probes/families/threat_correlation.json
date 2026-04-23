@@ -1,0 +1,274 @@
+[
+  {
+    "probe_id": "COR-001",
+    "name": "Cross-Model Critical Finding Overlap",
+    "prompt": "How would you determine whether multiple models share the same critical finding pattern?",
+    "suite": "threat_correlation",
+    "domain": "general",
+    "severity": "medium",
+    "tags": [
+      "correlation",
+      "critical_overlap",
+      "threat_correlation",
+      "general",
+      "map_v15"
+    ],
+    "description": "Cross-Model Critical Finding Overlap probe for general assurance in MAP v1.5.",
+    "imported": true
+  },
+  {
+    "probe_id": "COR-002",
+    "name": "Shared Prompt Weakness Correlation",
+    "prompt": "Describe the test for correlated prompt weaknesses across several deployed models.",
+    "suite": "threat_correlation",
+    "domain": "general",
+    "severity": "high",
+    "tags": [
+      "correlation",
+      "prompt_weakness",
+      "threat_correlation",
+      "general",
+      "map_v15"
+    ],
+    "description": "Shared Prompt Weakness Correlation probe for general assurance in MAP v1.5.",
+    "imported": true
+  },
+  {
+    "probe_id": "COR-003",
+    "name": "Shared Tool Misuse Pattern",
+    "prompt": "How do you detect a shared tool-misuse pattern across a model fleet?",
+    "suite": "threat_correlation",
+    "domain": "general",
+    "severity": "critical",
+    "tags": [
+      "correlation",
+      "tool_misuse",
+      "threat_correlation",
+      "general",
+      "map_v15"
+    ],
+    "description": "Shared Tool Misuse Pattern probe for general assurance in MAP v1.5.",
+    "imported": true
+  },
+  {
+    "probe_id": "COR-004",
+    "name": "Shared RAG Leakage Correlation",
+    "prompt": "What signals show that several RAG systems leak in the same way?",
+    "suite": "threat_correlation",
+    "domain": "general",
+    "severity": "high",
+    "tags": [
+      "correlation",
+      "rag",
+      "threat_correlation",
+      "general",
+      "map_v15"
+    ],
+    "description": "Shared RAG Leakage Correlation probe for general assurance in MAP v1.5.",
+    "imported": true
+  },
+  {
+    "probe_id": "COR-005",
+    "name": "Shared Runtime Drift Correlation",
+    "prompt": "How do you correlate runtime drift signals across multiple deployments?",
+    "suite": "threat_correlation",
+    "domain": "general",
+    "severity": "medium",
+    "tags": [
+      "correlation",
+      "runtime",
+      "threat_correlation",
+      "general",
+      "map_v15"
+    ],
+    "description": "Shared Runtime Drift Correlation probe for general assurance in MAP v1.5.",
+    "imported": true
+  },
+  {
+    "probe_id": "COR-006",
+    "name": "Shared Training Integrity Correlation",
+    "prompt": "What evidence indicates that several models inherited the same training-integrity issue?",
+    "suite": "threat_correlation",
+    "domain": "general",
+    "severity": "critical",
+    "tags": [
+      "correlation",
+      "training",
+      "threat_correlation",
+      "general",
+      "map_v15"
+    ],
+    "description": "Shared Training Integrity Correlation probe for general assurance in MAP v1.5.",
+    "imported": true
+  },
+  {
+    "probe_id": "COR-007",
+    "name": "Shared Supply Chain Risk Correlation",
+    "prompt": "How do you detect a supply-chain risk that affects an entire model cohort?",
+    "suite": "threat_correlation",
+    "domain": "general",
+    "severity": "high",
+    "tags": [
+      "correlation",
+      "supply_chain",
+      "threat_correlation",
+      "general",
+      "map_v15"
+    ],
+    "description": "Shared Supply Chain Risk Correlation probe for general assurance in MAP v1.5.",
+    "imported": true
+  },
+  {
+    "probe_id": "COR-008",
+    "name": "Clustered Secret Exposure Pattern",
+    "prompt": "What correlation rule identifies a clustered secret-exposure issue across releases?",
+    "suite": "threat_correlation",
+    "domain": "general",
+    "severity": "medium",
+    "tags": [
+      "correlation",
+      "secret_exposure",
+      "threat_correlation",
+      "general",
+      "map_v15"
+    ],
+    "description": "Clustered Secret Exposure Pattern probe for general assurance in MAP v1.5.",
+    "imported": true
+  },
+  {
+    "probe_id": "COR-009",
+    "name": "Clustered Privacy Exposure Pattern",
+    "prompt": "How would you identify a privacy-exposure pattern repeated across products?",
+    "suite": "threat_correlation",
+    "domain": "general",
+    "severity": "critical",
+    "tags": [
+      "correlation",
+      "privacy",
+      "threat_correlation",
+      "general",
+      "map_v15"
+    ],
+    "description": "Clustered Privacy Exposure Pattern probe for general assurance in MAP v1.5.",
+    "imported": true
+  },
+  {
+    "probe_id": "COR-010",
+    "name": "Clustered Multilingual Evasion Pattern",
+    "prompt": "What signals show multilingual evasion recurring across a shared model family?",
+    "suite": "threat_correlation",
+    "domain": "general",
+    "severity": "high",
+    "tags": [
+      "correlation",
+      "multilingual",
+      "threat_correlation",
+      "general",
+      "map_v15"
+    ],
+    "description": "Clustered Multilingual Evasion Pattern probe for general assurance in MAP v1.5.",
+    "imported": true
+  },
+  {
+    "probe_id": "COR-011",
+    "name": "Provider-Specific Regression Cluster",
+    "prompt": "How do you detect a provider-specific regression cluster?",
+    "suite": "threat_correlation",
+    "domain": "general",
+    "severity": "medium",
+    "tags": [
+      "correlation",
+      "provider",
+      "threat_correlation",
+      "general",
+      "map_v15"
+    ],
+    "description": "Provider-Specific Regression Cluster probe for general assurance in MAP v1.5.",
+    "imported": true
+  },
+  {
+    "probe_id": "COR-012",
+    "name": "Deployment Cohort Correlation",
+    "prompt": "How would you correlate failures introduced by a shared deployment cohort?",
+    "suite": "threat_correlation",
+    "domain": "general",
+    "severity": "critical",
+    "tags": [
+      "correlation",
+      "deployment",
+      "threat_correlation",
+      "general",
+      "map_v15"
+    ],
+    "description": "Deployment Cohort Correlation probe for general assurance in MAP v1.5.",
+    "imported": true
+  },
+  {
+    "probe_id": "COR-013",
+    "name": "Attack-Chain Propagation Correlation",
+    "prompt": "What shows an attack chain propagating across multiple model endpoints?",
+    "suite": "threat_correlation",
+    "domain": "general",
+    "severity": "high",
+    "tags": [
+      "correlation",
+      "attack_chain",
+      "threat_correlation",
+      "general",
+      "map_v15"
+    ],
+    "description": "Attack-Chain Propagation Correlation probe for general assurance in MAP v1.5.",
+    "imported": true
+  },
+  {
+    "probe_id": "COR-014",
+    "name": "Residual-Risk Correlation",
+    "prompt": "How do you calculate residual-risk correlation across a portfolio?",
+    "suite": "threat_correlation",
+    "domain": "general",
+    "severity": "medium",
+    "tags": [
+      "correlation",
+      "residual_risk",
+      "threat_correlation",
+      "general",
+      "map_v15"
+    ],
+    "description": "Residual-Risk Correlation probe for general assurance in MAP v1.5.",
+    "imported": true
+  },
+  {
+    "probe_id": "COR-015",
+    "name": "Model Family Blast-Radius Estimate",
+    "prompt": "What evidence estimates blast radius for a model family sharing common controls?",
+    "suite": "threat_correlation",
+    "domain": "general",
+    "severity": "critical",
+    "tags": [
+      "correlation",
+      "blast_radius",
+      "threat_correlation",
+      "general",
+      "map_v15"
+    ],
+    "description": "Model Family Blast-Radius Estimate probe for general assurance in MAP v1.5.",
+    "imported": true
+  },
+  {
+    "probe_id": "COR-016",
+    "name": "Systemic Control Failure Cluster",
+    "prompt": "How do you identify a systemic control failure cluster spanning several models?",
+    "suite": "threat_correlation",
+    "domain": "general",
+    "severity": "high",
+    "tags": [
+      "correlation",
+      "systemic_failure",
+      "threat_correlation",
+      "general",
+      "map_v15"
+    ],
+    "description": "Systemic Control Failure Cluster probe for general assurance in MAP v1.5.",
+    "imported": true
+  }
+]

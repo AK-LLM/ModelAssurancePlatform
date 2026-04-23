@@ -1,0 +1,9 @@
+{
+  "pipeline": "github",
+  "decision": "APPROVE WITH CONTROLS",
+  "average_risk": 3.9,
+  "gated_by": [
+    "privacy_pack",
+    "tool_pack"
+  ]
+}

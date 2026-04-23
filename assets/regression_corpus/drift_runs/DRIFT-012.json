@@ -1,0 +1,10 @@
+{
+  "campaign_id": "DRIFT-012",
+  "decision": "CONDITIONAL REVIEW",
+  "findings_total": 4,
+  "critical_findings": 1,
+  "high_findings": 4,
+  "average_risk_score": 5.94,
+  "open_findings": 1,
+  "captured_at": "2026-04-13T12:00:00Z"
+}

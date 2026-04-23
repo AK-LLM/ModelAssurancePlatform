@@ -1,0 +1,14 @@
+{
+  "platform_version": "2.0-enterprise",
+  "probe_count": 364,
+  "family_count": 21,
+  "critical_count": 96,
+  "high_count": 168,
+  "domain_count": 5,
+  "recipe_count": 320,
+  "category_count": 10,
+  "cause_count": 32,
+  "scenario_count": 12,
+  "chain_count": 17,
+  "suite_depth_score": 100.0
+}
